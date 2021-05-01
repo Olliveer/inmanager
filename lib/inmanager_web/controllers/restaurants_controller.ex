@@ -4,7 +4,7 @@ defmodule InmanagerWeb.RestaurantsController do
   alias Inmanager.Restaurant
   alias InmanagerWeb.FallbackController
 
-  action_fallback InmanagerWeb.FallbackController
+  action_fallback FallbackController
 
   def create(conn, params) do
     with {:ok, %Restaurant{} = restaurant} <- Inmanager.create_restaurant(params) do
