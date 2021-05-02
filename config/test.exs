@@ -12,6 +12,8 @@ config :inmanager, Inmanager.Repo,
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
 
+config :inmaneger, Inmanager.Mailer, adapter: Bamboo.TestAdapter
+
 # We don't run a server during test. If one is required,
 # you can enable the server option below.
 config :inmanager, InmanagerWeb.Endpoint,

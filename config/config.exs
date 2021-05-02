@@ -14,6 +14,8 @@ config :inmanager, Inmanager.Repo,
   migration_primary_key: [type: :binary_id],
   migration_foreign_key: [type: :binary_id]
 
+config :inmaneger, Inmanager.Mailer, adapter: Bamboo.LocalAdapter
+
 # Configures the endpoint
 config :inmanager, InmanagerWeb.Endpoint,
   url: [host: "localhost"],
